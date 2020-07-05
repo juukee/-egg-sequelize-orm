@@ -57,17 +57,11 @@ jobs:
       mysql:
         # Docker Hub image
         image: mysql
-        restart: always
         env:
           MYSQL_HOST: localhost
           MYSQL_PORT: 3306
           MYSQL_ROOT_PASSWORD: ''
-          MYSQL_DATABASE: 'test'
-          MYSQL_DATABASE: 'test1'
-          MYSQL_DATABASE: 'test2'
-          MYSQL_DATABASE: 'test3'
-          MYSQL_DATABASE: 'test4'
-
+   
         # Set health checks to wait until redis has started
         # options: >-
         #   --health-cmd "redis-cli ping"
